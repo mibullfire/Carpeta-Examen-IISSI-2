@@ -1,0 +1,12 @@
+img{
+    width: auto;
+}
+
+.divGallery {
+    display: grid;
+
+}
+#texto{
+    display: inline-block;
+    vertical-align: top;
+  }

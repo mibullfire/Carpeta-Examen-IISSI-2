@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <script src="js/utils/include.js"></script>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/libs/bootstrap.min.js"></script>
+    
+        <script src="js/libs/axios.min.js"></script>
+    
+        <script type="module" src="js/index.js"></script>
+        <script type="module" src="js/header.js"></script>
+
+        <title>Galería de Fotos</title>
+    </head>
+    <body class="dark bg-dark">
+        <div class="container">
+            <div class="row">  
+                <div id="page-header"></div>
+            </div>
+            <div class="row text-center">
+                <h1 class="text-light">Fotos Recientes</h1>
+                <p></p>
+            </div>
+
+            <div id="errors"></div>
+            <div id="gallery"></div>
+
+            <script>
+                include("header.html", "#page-header")
+            </script>
+        </div>
+    </body>
+</html>

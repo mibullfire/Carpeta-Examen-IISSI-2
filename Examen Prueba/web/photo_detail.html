@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/utils/include.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/photo_detail.js" type="module"></script>
+    <script src="js/libs/axios.min.js"></script>
+</head>
+
+<body class="dark">
+    <div id="page-header"></div>
+    <div class="container">
+        <div id="errors"></div>
+        <div class="row text-center" id="divDetails">
+            <div class="col-md-3">
+                <div class="row">
+                    <button class="btn btn-primary" id="btn-edit">Edit this photo</button>
+                    <button class="btn btn-danger" id="btn-delete">Delete this photo</button>
+                </div>
+                <div class="row">
+                    <form>
+                        <div class="form-group">
+                            <label for="rating-input">Rate this photo:</label>
+                            <select id="rating-input" name="rating" class="form-control">
+                                <option value="1">*</option>
+                                <option value="2">**</option>
+                                <option value="3">***</option>
+                                <option value="4">****</option>
+                                <option value="5">*****</option>
+                            </select>
+                            <button type="submit" class="btn btn-success">Rate</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+</body>
+
+</html>

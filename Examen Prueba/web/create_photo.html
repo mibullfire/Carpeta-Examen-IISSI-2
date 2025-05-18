@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edición de foto</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/utils/include.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/create_photo.js" type="module"></script>
+</head>
+
+<body class="dark">
+    <div id="page-header"></div>
+    <div id="errors"></div>
+
+    <!-- Formulario de edición-->
+    <form id="form-photo-upload">
+        <div class="form-group">
+            <label for="input-titulo">Titulo:</label>
+            <input required type="text" class="form-control" id="input-titulo" name="title" placeholder="titulo del juego">
+        </div>
+        <div class="form-group">
+            <label for="input-developer">Developer:</label>
+            <input required type="text" class="form-control" id="input-developer" name="description" placeholder="developer">
+        </div>
+        <div class="form-group">
+            <label for="releaseDate-input">releaseDate:</label>
+            <input type="date" class="form-control" id="releaseDate-input" name="date"
+                placeholder="releaseDate" required>
+        </div>
+        <div class="form-group">
+            <label for="input-image">imageUrl:</label>
+            <input required type="text" class="form-control" id="input-image" name="url" placeholder="image">
+        </div>
+                <div class="form-group">
+            <label for="input-image">imageUrl:</label>
+            <input required type="text" class="form-control" id="input-image" name="visibility" placeholder="image">
+        </div>
+       
+        <div class="row">
+            <div class="col-md text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+</body>
+
+</html>

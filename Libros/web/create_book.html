@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edición de foto</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/utils/include.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/create_book.js" type="module"></script>
+</head>
+
+<body class="dark">
+    <div id="page-header"></div>
+    <div id="errors"></div>
+
+    <!-- Formulario de edición-->
+    <form id="form-book-upload">
+        <div class="form-group">
+            <label for="input-titulo">Titulo:</label>
+            <input required type="text" class="form-control" id="input-title" name="title" placeholder="titulo del libro">
+        </div>
+        <div class="form-group">
+            <label for="input-author">Autor:</label>
+            <input required type="text" class="form-control" id="input-author" name="author" placeholder="author">
+        </div>
+        
+        <div class="form-group">
+            <label for="releaseDate-input">releaseDate:</label>
+            <input type="date" class="form-control" id="releaseDate-input" name="releaseDate"
+                placeholder="releaseDate" required>
+        </div>
+        <div class="form-group">
+            <label for="input-image">imageUrl:</label>
+            <input required type="text" class="form-control" id="input-image" name="imageUrl" placeholder="image">
+        </div>
+        <div class="form-group">
+            <label for="input-numPages">numPages:</label>
+            <input required type="number" class="form-numPages" id="input-numPages" name="numPages" placeholder="numPages">
+        </div>
+       
+        <div class="row">
+            <div class="col-md text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+</body>
+
+</html>
